@@ -305,4 +305,43 @@ int Polynomial::get_maxpower() const
   return maxdegree;
 
 }
+Polynomial& Polynomial::operator++()
+{
 
+    if(this->get_maxpower()==0)
+    {
+       ++ Terms[0];
+    }
+    return *this;
+}
+Polynomial&Polynomial:: operator --()
+{
+    if(this->get_maxpower()==0)
+    {
+       -- Terms[0];
+    }
+    return *this;
+}
+
+Polynomial Polynomial::operator++(int )
+{
+   Polynomial temp=*this;
+   if(this->get_maxpower()==0)
+   {
+       ++(*this);
+   }
+
+
+    return temp;
+}
+Polynomial Polynomial::operator--(int )
+{
+    Polynomial temp=*this;
+    if(this->get_maxpower()==0)
+    {
+        --(*this);
+    }
+
+
+     return temp;
+}
