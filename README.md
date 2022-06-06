@@ -1,3 +1,3 @@
 # Polynomial
-This project is obout Polynomial class , Term class and overloading operators.
+This project is obout  class Polynomial,class Term  and overloading operators.
 I wrote overload for comparison operators,increment and decrement operators,unary operators ,.....
